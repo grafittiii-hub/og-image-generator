@@ -35,9 +35,14 @@
         .text-content { position: absolute; left: 100px; z-index: 5; text-align: left; max-width: 600px;}
         .title { 
             font-size: 110px; font-weight: 900; margin: 0; line-height: 1;
-            background: linear-gradient(to right, #fff, #f5cdfa);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-            text-shadow: 0 10px 30px rgba(0,0,0,0.5); font-family: 'Syne', sans-serif; letter-spacing: 5px;
+            /* 移除 text-shadow，字體改為純白並增加一點點透明度與外光暈，更顯夢幻 */
+            background: linear-gradient(to bottom, #ffffff, #e0d0ff);
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            font-family: 'Syne', sans-serif; 
+            letter-spacing: 5px;
+            /* 增加濾鏡或微小的 glow 來取代黑色陰影 */
+            filter: drop-shadow(0 0 10px rgba(212, 165, 255, 0.5));
         }
         .subtitle { font-size: 35px; letter-spacing: 15px; margin-top: 20px; color: rgba(255,255,255,0.7); }
         .badge {
